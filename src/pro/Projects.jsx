@@ -23,6 +23,22 @@ const Projects = () => {
             
           </ul>
         </div>
+
+        <div className="projectchild">
+          <a href="https://ekart-react-three.vercel.app/" target="_blank">
+            <h5>EkartInfo</h5>
+          </a>
+          <ul className="ulBody">
+            <li>
+            Fetched and displayed Products data from the fakestore API, showcasing products details dynamically.
+And display products based on the product Id. Filtering based on the product types and prices.
+
+            </li>
+           
+          </ul>
+        </div>
+
+
         <div className="projectchild">
           <a href="https://adi4b1.github.io/resumebuilder/" target="_blank">
             <h5>ResumeBuilder</h5>
@@ -76,6 +92,9 @@ const Projects = () => {
             </li>
           </ul>
         </div>
+
+
+        
         {/* <div className="projectchild">
           <h5>CharacterInfo</h5>
         </div>
