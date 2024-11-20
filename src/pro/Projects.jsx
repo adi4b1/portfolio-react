@@ -15,14 +15,12 @@ const Projects = () => {
           </a>
           <ul className="ulBody">
             <li>
-              In this project I fetch the data from the TMDB movie Api and
-              display the results in the website and also display the current
-              user geolocation based on the geolocation JavaScript API.
+              Fetched and displayed movie data from the TMDB API, showcasing movie details dynamically.
             </li>
             <li>
-              And also displayed the individual movies based on their ID as well
-              as display the person details also based on their ID.
+            Implemented individual movie and person detail pages, dynamically rendering information based on unique movie and person IDs and display videos based on movie ids
             </li>
+            
           </ul>
         </div>
         <div className="projectchild">
@@ -63,6 +61,22 @@ const Projects = () => {
           </ul>
         </div>
         <div className="projectchild">
+          <a href="https://adimoviedb.vercel.app/" target="_blank">
+            <h5>MovieDatabase</h5>
+          </a>
+          <ul className="ulBody">
+            <li>
+              In this project I fetch the data from the TMDB movie Api and
+              display the results in the website and also display the current
+              user geolocation based on the geolocation JavaScript API.
+            </li>
+            <li>
+              And also displayed the individual movies based on their ID as well
+              as display the person details also based on their ID.
+            </li>
+          </ul>
+        </div>
+        {/* <div className="projectchild">
           <h5>CharacterInfo</h5>
         </div>
         <div className="projectchild">
@@ -70,13 +84,7 @@ const Projects = () => {
         </div>
         <div className="projectchild">
           <h5>CharacterInfo</h5>
-        </div>
-        <div className="projectchild">
-          <h5>CharacterInfo</h5>
-        </div>
-        <div className="projectchild">
-          <h5>CharacterInfo</h5>
-        </div>
+        </div> */}
       </div>
     </div>
   );

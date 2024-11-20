@@ -8,7 +8,7 @@ const Info = () => {
   return (
     <div className='infoBody'>
         <div className='forText'>
-            <h1>Hi I am Adikesavulu Mitnala.I worked as a Frontend developer</h1>
+            <h1>Hi I am Adikesavulu Mitnala.I worked as a Software engineer</h1>
         </div>
         <div>
             {/* <img src='/src/images/adi.jpeg' alt="adipic" /> */}
