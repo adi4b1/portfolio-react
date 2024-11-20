@@ -10,7 +10,7 @@ const Projects = () => {
       </div>
       <div className="projects">
         <div className="projectchild">
-          <a href="https://adimoviedb.vercel.app/" target="_blank">
+          <a href="https://react-adi-moviedb.vercel.app/" target="_blank">
             <h5>MovieDatabase</h5>
           </a>
           <ul className="ulBody">
