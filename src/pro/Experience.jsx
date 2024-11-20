@@ -51,28 +51,27 @@ const Experience = () => {
           <hr style={{ color: "white" }} />
           <ul className="forExtraUL">
             <li>
-              Used HTML, CSS and JavaScript to create interactive elements that
-              improved user experience
+            Built a responsive, interactive web pages using HTML, CSS, and JavaScript, achieving improved cross-browser compatibility and enhanced functionality.
             </li>
             <li>
-              Built an interactive web page using HTML and CSS and JavaScript,
-              resulting 10% increase in the performance of a page
+            Utilized HTML, CSS, and JavaScript to create interactive elements, improving user experience and increasing page performance by 10%.
             </li>
             <li>
-              Utilized version control systems (Git) to manage code and
-              collaborate with team members
+            Developed dynamic, reusable components with React.js to improve code maintainability and performance.
             </li>
             <li>
-              Developed a cross-browser compatible web page using JavaScript
+            Implemented state management in React applications using Redux Toolkit to efficiently handle application state and optimize data flow.
             </li>
             <li>
-              Leveraged JavaScript to create interactive components and
-              animations, resulting in an improved user experience
+            Integrated React Router for seamless navigation and improved user experience with fast transitions.
             </li>
             <li>
-              Used debouncing and throttling to increase the website
-              functionality makes good.
+            Created complex UI elements with React.js, leveraging hooks such as use State, use Effect, and use Reducer for better component logic and performance.
             </li>
+            <li>Utilized version control systems (Git) to manage codebase and collaborate effectively within a team environment.</li>
+            <li>Applied optimization techniques such as debouncing and throttling to ensure smooth interactions, reducing unnecessary API calls and improving performance.</li>
+            <li>Leveraged React’s virtual DOM for faster rendering, optimizing the website’s responsiveness and performance.</li>
+            <li>Ensured smooth transitions between pages by using Reacts state management and lifecycle methods.</li>
           </ul>
         </div>
         <div className="experience">
@@ -116,27 +115,16 @@ const Experience = () => {
           </div>
           <hr style={{ color: "white" }} />
           <ul className="forExtraUL">
-            <li>worked with different sap systems for support</li>
+            
             <li>
-              activate business function and business configuration data for
-              adding new features to sap systems
+            Activated business functions and configured business data to implement new features in SAP systems.
             </li>
-            <li>
-              managed the translations in different languages to the sap tables.
-            </li>
-            <li>
-              give the support to clean up the entries in the sap ABAP systems
-              in the time of upgrade
-            </li>
-            <li>managed the master data of the tables</li>
-            <li>
-              worked with Solman and ServiceNow tools to track the ticketing
-              part
-            </li>
-            <li>
-              manage the translation for data elements based on client
-              requirement.
-            </li>
+            <li>Managed multilingual translations for SAP tables, ensuring consistency across different language versions</li>
+            <li>Provided support for data cleanup in SAP ABAP systems during system upgrades, ensuring data integrity and system stability.</li>
+            <li>Administered master data management for key SAP tables, optimizing data flow and system performance.</li>
+            <li>Utilized Solution Manager (Solman) and ServiceNow for efficient ticketing and incident tracking, ensuring timely resolution of issues.</li>
+            <li>Coordinated translation of data elements based on client specifications, ensuring accurate and comprehensive language support.</li>
+            <li></li>
           </ul>
         </div>
       </div>
