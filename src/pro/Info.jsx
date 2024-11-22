@@ -13,12 +13,12 @@ const Info = () => {
       let outtext=`
       Hi, I am Adikesavulu Mitnala. I work as a Software Engineer.
       `
-      let data=getText.current.textContent
+      // let data=getText.current.textContent
       // getText.current.style.display="none"
       const animFunc=()=>{
         let res=outtext.slice(0,count)
         getText.current.textContent=res
-        count++
+        count++;
       }
       // console.log(getText.current.textContent);
       setInterval(animFunc,100)

@@ -50,8 +50,8 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
   // console.log('progress',progress,typeof progress);
   
   return (
-    <nav className="navbar">
-      <ul className="navul">
+    <div className="navbarit">
+      <ul className="navulit">
         <div className="forParentNav">
             <div className="forChildNav">
                 <li className={`li-items ${active==="home"?'active-li':''}`} onClick={() => scrollToSection(InfoRef,'home')}>Home</li>
@@ -190,7 +190,7 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
       </ul>
       
       
-    </nav>
+    </div>
   );
 };
 
