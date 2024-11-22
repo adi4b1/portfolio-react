@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import image from '../images/adi.jpeg'
 // import OpenModal from '../OpenModal'
 // import Button from 'react-bootstrap/Button';
 // import Modal from 'react-bootstrap/Modal';
 
 const Info = () => {
+  const getText=useRef(null)
+ 
+  useEffect(()=>{
+    let count=0;
+    if(getText.current){
+      let outtext=`
+      Hi, I am Adikesavulu Mitnala. I work as a Software Engineer.
+      `
+      let data=getText.current.textContent
+      // getText.current.style.display="none"
+      const animFunc=()=>{
+        let res=outtext.slice(0,count)
+        getText.current.textContent=res
+        count++
+      }
+      // console.log(getText.current.textContent);
+      setInterval(animFunc,100)
+    }
+    
+  },[])
   return (
     <div className='infoBody'>
         <div className='forText'>
-            <h1>Hi I am Adikesavulu Mitnala.I worked as a Software engineer</h1>
+            <h1 ref={getText}></h1>
         </div>
         <div>
             {/* <img src='/src/images/adi.jpeg' alt="adipic" /> */}

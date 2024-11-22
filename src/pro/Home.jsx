@@ -8,6 +8,7 @@ const Home = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
   return (
     <div className="formain">
       <section ref={InfoRef} className="section">
+        
         <Info />
       </section>
       <section ref={skillRef} className="section">

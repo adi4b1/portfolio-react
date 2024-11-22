@@ -155,9 +155,9 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
                   </div>
                   <div>
                     <h6>
-                      <Link to="www.linkedin.com/in/adikesavulu-mitnala-99528a178">
+                      <a href="linkedin.com/in/adikesavulu-mitnala-99528a178" target="__blank">
                         Linkedin
-                      </Link>
+                      </a>
                     </h6>
                   </div>
                 </div>

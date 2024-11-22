@@ -108,6 +108,11 @@ mark{
   color:green;
   background-color: green;
 }
+.forText{
+  position:relative;
+  width:99%;
+  max-width:500px;
+}
 .forText h1{
   
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
