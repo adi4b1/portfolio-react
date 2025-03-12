@@ -6,9 +6,18 @@ import image from '../images/adi.jpeg'
 
 const Info = () => {
   const getText=useRef(null)
- 
+  window.addEventListener('scroll',function(e){
+    // console.log('scrollY',window.scrollY)
+    // console.log('innerHeight',window.innerHeight)
+    // console.log('totaldocu',document.documentElement.scrollHeight)
+    if(window.innerHeight){
+      console.log(e)
+    }
+  })
+  
   useEffect(()=>{
     let count=0;
+   
     if(getText.current){
       let outtext=`
       Hi, I am Adikesavulu Mitnala. I work as a Software Engineer.

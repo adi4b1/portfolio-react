@@ -60,7 +60,7 @@ const Experience = () => {
             Developed dynamic, reusable components with React.js to improve code maintainability and performance.
             </li>
             <li>
-            Implemented state management in React applications using Redux Toolkit to efficiently handle application state and optimize data flow.
+            Employed Redux Toolkit for global state management, resulting in a 30% reduction in unnecessary re-renders and improved performance.
             </li>
             <li>
             Integrated React Router for seamless navigation and improved user experience with fast transitions.
