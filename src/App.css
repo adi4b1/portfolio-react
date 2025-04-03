@@ -18,11 +18,11 @@
   position: fixed;
   width: 100%;
   z-index: 1;
-  display: flex;
+  /* display: flex; */
 
   padding-top: 6px;
 
-  padding-left: 40px;
+  /* padding-left: 40px; */
   color: white;
   background-color: rgb(0, 0, 0);
 }
@@ -136,6 +136,24 @@
   }
 }
 @media screen and (max-width: 540px) {
+  .navulit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+    /* background: transparent; */
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /* display: flex; */
+
+    /* padding-top: 6px; */
+
+    /* padding-left: 40px; */
+    color: white;
+    background-color: rgb(0, 0, 0);
+  }
   .infoBody {
     display: flex;
     flex-direction: column-reverse;
