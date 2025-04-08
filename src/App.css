@@ -268,7 +268,9 @@ mark {
   gap: 10px;
   align-items: center;
 }
-
+.secondHalf h3 {
+  color: white;
+}
 .projects {
   display: flex;
   flex-direction: row;
