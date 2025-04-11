@@ -22,14 +22,13 @@ const Info = () => {
           data.address.village ||
           "Unknown";
         console.log("locationname", location);
-        let loc = await fetch(`${API_URL}/location/add-location`, {
+        await fetch(`${API_URL}/location/add-location`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ location: location }),
         });
-        return loc;
       } catch (err) {
         console.error("Failed to fetch location name:", err);
       }
