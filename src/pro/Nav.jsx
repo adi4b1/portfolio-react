@@ -87,7 +87,7 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
             aria-valuenow={progress}
             aria-valuemin="1"
             aria-valuemax="100"
-            style={{ height: "5px" }}
+            style={{ height: "5px", width: "100%" }}
           >
             <div
               className="progress-bar"

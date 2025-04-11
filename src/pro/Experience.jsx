@@ -45,33 +45,54 @@ const Experience = () => {
                 <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
                 <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
               </svg>
-              &nbsp;Dec 2022 - Present
+              &nbsp;Apr 2022 - Present
             </small>
           </div>
           <hr style={{ color: "white" }} />
           <ul className="forExtraUL">
             <li>
-            Built a responsive, interactive web pages using HTML, CSS, and JavaScript, achieving improved cross-browser compatibility and enhanced functionality.
+              Built a responsive, interactive web pages using HTML, CSS, and
+              JavaScript, achieving improved cross-browser compatibility and
+              enhanced functionality.
             </li>
             <li>
-            Utilized HTML, CSS, and JavaScript to create interactive elements, improving user experience and increasing page performance by 10%.
+              Utilized HTML, CSS, and JavaScript to create interactive elements,
+              improving user experience and increasing page performance by 10%.
             </li>
             <li>
-            Developed dynamic, reusable components with React.js to improve code maintainability and performance.
+              Developed dynamic, reusable components with React.js to improve
+              code maintainability and performance.
             </li>
             <li>
-            Employed Redux Toolkit for global state management, resulting in a 30% reduction in unnecessary re-renders and improved performance.
+              Employed Redux Toolkit for global state management, resulting in a
+              30% reduction in unnecessary re-renders and improved performance.
             </li>
             <li>
-            Integrated React Router for seamless navigation and improved user experience with fast transitions.
+              Integrated React Router for seamless navigation and improved user
+              experience with fast transitions.
             </li>
             <li>
-            Created complex UI elements with React.js, leveraging hooks such as use State, use Effect, and use Reducer for better component logic and performance.
+              Created complex UI elements with React.js, leveraging hooks such
+              as use State, use Effect, and use Reducer for better component
+              logic and performance.
             </li>
-            <li>Utilized version control systems (Git) to manage codebase and collaborate effectively within a team environment.</li>
-            <li>Applied optimization techniques such as debouncing and throttling to ensure smooth interactions, reducing unnecessary API calls and improving performance.</li>
-            <li>Leveraged React’s virtual DOM for faster rendering, optimizing the website’s responsiveness and performance.</li>
-            <li>Ensured smooth transitions between pages by using Reacts state management and lifecycle methods.</li>
+            <li>
+              Utilized version control systems (Git) to manage codebase and
+              collaborate effectively within a team environment.
+            </li>
+            <li>
+              Applied optimization techniques such as debouncing and throttling
+              to ensure smooth interactions, reducing unnecessary API calls and
+              improving performance.
+            </li>
+            <li>
+              Leveraged React’s virtual DOM for faster rendering, optimizing the
+              website’s responsiveness and performance.
+            </li>
+            <li>
+              Ensured smooth transitions between pages by using Reacts state
+              management and lifecycle methods.
+            </li>
           </ul>
         </div>
         <div className="experience">
@@ -110,20 +131,37 @@ const Experience = () => {
                 <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
                 <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
               </svg>
-              &nbsp;Dec 2021 - Nov 2022
+              &nbsp;Dec 2021 - Apr 2022
             </small>
           </div>
           <hr style={{ color: "white" }} />
           <ul className="forExtraUL">
-            
             <li>
-            Activated business functions and configured business data to implement new features in SAP systems.
+              Activated business functions and configured business data to
+              implement new features in SAP systems.
             </li>
-            <li>Managed multilingual translations for SAP tables, ensuring consistency across different language versions</li>
-            <li>Provided support for data cleanup in SAP ABAP systems during system upgrades, ensuring data integrity and system stability.</li>
-            <li>Administered master data management for key SAP tables, optimizing data flow and system performance.</li>
-            <li>Utilized Solution Manager (Solman) and ServiceNow for efficient ticketing and incident tracking, ensuring timely resolution of issues.</li>
-            <li>Coordinated translation of data elements based on client specifications, ensuring accurate and comprehensive language support.</li>
+            <li>
+              Managed multilingual translations for SAP tables, ensuring
+              consistency across different language versions
+            </li>
+            <li>
+              Provided support for data cleanup in SAP ABAP systems during
+              system upgrades, ensuring data integrity and system stability.
+            </li>
+            <li>
+              Administered master data management for key SAP tables, optimizing
+              data flow and system performance.
+            </li>
+            <li>
+              Utilized Solution Manager (Solman) and ServiceNow for efficient
+              ticketing and incident tracking, ensuring timely resolution of
+              issues.
+            </li>
+            <li>
+              Coordinated translation of data elements based on client
+              specifications, ensuring accurate and comprehensive language
+              support.
+            </li>
             <li></li>
           </ul>
         </div>
