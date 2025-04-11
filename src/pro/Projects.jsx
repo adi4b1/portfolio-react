@@ -10,35 +10,22 @@ const Projects = () => {
       </div>
       <div className="projects">
         <div className="projectchild">
-          <a href="https://react-adi-moviedb.vercel.app/" target="_blank">
-            <h5>MovieDatabase</h5>
+          <a href="https://task-frontend-orcin.vercel.app/" target="_blank">
+            <h5>TaskInfo</h5>
           </a>
           <ul className="ulBody">
             <li>
-              Fetched and displayed movie data from the TMDB API, showcasing movie details dynamically.
+              The Task Management System is a web application that allows users
+              to create, view, update, and delete tasks efficiently.
             </li>
             <li>
-            Implemented individual movie and person detail pages, dynamically rendering information based on unique movie and person IDs and display videos based on movie ids
+              It is designed to help users manage their daily tasks by
+              organizing them in a structured format. The application uses a
+              React frontend with Redux Toolkit for state management and a
+              Node.js + Express.js backend to handle API requests.
             </li>
-            
           </ul>
         </div>
-
-        <div className="projectchild">
-          <a href="https://ekart-react-three.vercel.app/" target="_blank">
-            <h5>EkartInfo</h5>
-          </a>
-          <ul className="ulBody">
-            <li>
-            Fetched and displayed Products data from the fakestore API, showcasing products details dynamically.
-And display products based on the product Id. Filtering based on the product types and prices.
-
-            </li>
-           
-          </ul>
-        </div>
-
-
         <div className="projectchild">
           <a href="https://adi4b1.github.io/resumebuilder/" target="_blank">
             <h5>ResumeBuilder</h5>
@@ -51,19 +38,38 @@ And display products based on the product Id. Filtering based on the product typ
             </li>
           </ul>
         </div>
+
         <div className="projectchild">
-          <a href="https://task-frontend-orcin.vercel.app/" target="_blank">
-            <h5>TaskInfo</h5>
+          <a href="https://react-adi-moviedb.vercel.app/" target="_blank">
+            <h5>MovieDatabase</h5>
           </a>
           <ul className="ulBody">
             <li>
-            The Task Management System is a web application that allows users to create, view, update, and delete tasks efficiently.
+              Fetched and displayed movie data from the TMDB API, showcasing
+              movie details dynamically.
             </li>
             <li>
-            It is designed to help users manage their daily tasks by organizing them in a structured format. The application uses a React frontend with Redux Toolkit for state management and a Node.js + Express.js backend to handle API requests.
+              Implemented individual movie and person detail pages, dynamically
+              rendering information based on unique movie and person IDs and
+              display videos based on movie ids
             </li>
           </ul>
         </div>
+
+        <div className="projectchild">
+          <a href="https://ekart-react-three.vercel.app/" target="_blank">
+            <h5>EkartInfo</h5>
+          </a>
+          <ul className="ulBody">
+            <li>
+              Fetched and displayed Products data from the fakestore API,
+              showcasing products details dynamically. And display products
+              based on the product Id. Filtering based on the product types and
+              prices.
+            </li>
+          </ul>
+        </div>
+
         <div className="projectchild">
           <a href="https://adi4b1.github.io/character-Info/" target="_blank">
             <h5>CharacterInfo</h5>
@@ -105,8 +111,6 @@ And display products based on the product Id. Filtering based on the product typ
           </ul>
         </div>
 
-
-        
         {/* <div className="projectchild">
           <h5>CharacterInfo</h5>
         </div>
