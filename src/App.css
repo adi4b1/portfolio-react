@@ -17,7 +17,7 @@
   height: 60px;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   /* display: flex; */
 
   padding-top: 6px;
@@ -36,7 +36,7 @@
 .forChildNav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 .forChildNav .li-items:hover {
@@ -74,7 +74,7 @@
 .forImage {
   height: 380px;
   width: 380px;
-padding:5px;
+  padding: 5px;
   border-radius: 50%;
   animation: imageAnimation 1s ease-in-out forwards;
 }
@@ -139,13 +139,13 @@ padding:5px;
   .navulit {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     /* gap: 10px; */
     /* background: transparent; */
     height: 60px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     /* display: flex; */
 
     /* padding-top: 6px; */
@@ -379,16 +379,22 @@ mark {
   outline: none;
   display: flex;
   border: none;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  /* margin-bottom: 5px; */
   box-shadow: none;
-
-  justify-content: right;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   cursor: pointer;
 }
-/* .closeModal:hover:after{
- content:"Close";
- transition:2s all;
-} */
+.closeModal:hover {
+  /* content: "Close"; */
+  background-color: lightgray;
+  transition: 0.1s all;
+}
 .companyImage {
   height: 150px;
   width: 310px;
@@ -438,29 +444,30 @@ ul {
   font-size: 12px;
   /* background: transparent; */
 }
-/* .forModalParent{
-
-  position:relative;
- 
-  
-} */
-
 .forModal {
-  position: absolute;
-  height: 300px;
-  z-index: 1;
-  width: 300px;
+  /* position:relative; */
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+.forinsideModal {
+  /* position: absolute;
+  height: 300px; */
+  /* z-index: 100; */
+  width: 300px;
+
   background-color: white;
   box-shadow: 1px 1px 10px gray;
   filter: drop-shadow(1px 1px 5px gray);
   border-radius: 20px;
   color: black;
-  align-content: center;
-  top: 65px;
+  /* align-content: center; */
+  /* top: 65px; */
   /* transition: 3s height; */
-  left: 38%;
+  /* left: 38%; */
   /* flex-direction: column; */
   animation: modalAnimationBlock 0.5s ease-in-out forwards;
   /* top:200px;
@@ -481,7 +488,8 @@ ul {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  /* justify-content: space-between; */
+
+  justify-content: space-between;
 }
 
 .addInfo {
