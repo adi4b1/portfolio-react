@@ -6,6 +6,9 @@ import { API_URL } from "./api";
 // import Modal from 'react-bootstrap/Modal';
 
 const Info = () => {
+  const [location,setlocation]=useState(
+    localStorage.getItem('location') || ""
+  )
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { latitude, longitude } = position.coords;
@@ -21,6 +24,7 @@ const Info = () => {
           data.address.town ||
           data.address.village ||
           "Unknown";
+          localStorage.setItem('location',location)
         console.log("locationname", location);
         await fetch(`${API_URL}/location/add-location`, {
           method: "POST",
