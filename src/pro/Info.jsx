@@ -11,7 +11,7 @@ const Info = () => {
   )
   // const hasPostedLoc=useRef(false)
   useEffect(() => {
-    const isPosted=localStorage.getItem('location')
+    const isPosted=localStorage.getItem('locationPosted')
     if(isPosted||locname)return;
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { latitude, longitude } = position.coords;
@@ -27,9 +27,10 @@ const Info = () => {
           data.address.town ||
           data.address.village ||
           "Unknown";
+          setlocation(location)
           localStorage.setItem('location',location)
         console.log("locationname", location);
-        setlocation(location)
+       
         // if(!hasPostedLoc.current){
           await fetch(`${API_URL}/location/add-location`, {
             method: "POST",
