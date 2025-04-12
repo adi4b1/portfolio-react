@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import image from "../images/adi.jpeg";
 import { API_URL } from "./api";
 // import OpenModal from '../OpenModal'
@@ -6,10 +6,13 @@ import { API_URL } from "./api";
 // import Modal from 'react-bootstrap/Modal';
 
 const Info = () => {
-  const [location,setlocation]=useState(
+  const [locname,setlocation]=useState(
     localStorage.getItem('location') || ""
   )
+  // const hasPostedLoc=useRef(false)
   useEffect(() => {
+    const isPosted=localStorage.getItem('location')
+    if(isPosted||locname)return;
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { latitude, longitude } = position.coords;
 
@@ -26,13 +29,19 @@ const Info = () => {
           "Unknown";
           localStorage.setItem('location',location)
         console.log("locationname", location);
-        await fetch(`${API_URL}/location/add-location`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ location: location }),
-        });
+        setlocation(location)
+        // if(!hasPostedLoc.current){
+          await fetch(`${API_URL}/location/add-location`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ location }),
+          });
+          localStorage.setItem('locationPosted', 'true');
+        // }
+        
+     
       } catch (err) {
         console.error("Failed to fetch location name:", err);
       }
