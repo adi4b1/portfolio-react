@@ -10,9 +10,8 @@ const Info = () => {
     localStorage.getItem('location') || ""
   )
   // const hasPostedLoc=useRef(false)
-  useEffect(() => {
-    const isPosted=localStorage.getItem('locationPosted')
-    if(isPosted||locname)return;
+
+  const getLocationFromClick=async()=>{
     navigator.geolocation.getCurrentPosition(async (position) => {
       const { latitude, longitude } = position.coords;
 
@@ -47,9 +46,16 @@ const Info = () => {
         console.error("Failed to fetch location name:", err);
       }
     });
+  }
+  useEffect(() => {
+    const isPosted=localStorage.getItem('locationPosted')
+    if(isPosted||locname)return;
+    // getLocationFromClick()
   }, []);
+  
   const getText = useRef(null);
   window.addEventListener("scroll", function (e) {
+    getLocationFromClick()
     // console.log('scrollY',window.scrollY)
     // console.log('innerHeight',window.innerHeight)
     // console.log('totaldocu',document.documentElement.scrollHeight)
@@ -84,7 +90,9 @@ const Info = () => {
       </div>
       <div>
         {/* <img src='/src/images/adi.jpeg' alt="adipic" /> */}
-        <img src={image} alt="pic" className="forImage" />
+        <img src={image} alt="pic" className="forImage"
+        onClick={()=>getLocationFromClick()}
+        />
       </div>
       {/* <OpenModal/> */}
     </div>
