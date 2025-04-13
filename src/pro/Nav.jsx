@@ -1,4 +1,7 @@
+import React from 'react';
+
 import { useEffect, useState } from "react";
+import {API_URL} from './api'
 import { Link } from "react-router-dom";
 import "../App.css";
 import { AtSign, X } from "lucide-react";
@@ -18,6 +21,57 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
   const modalHandler = () => {
     setModal(!modal);
   };
+
+    const [locname,setlocation]=useState(
+      localStorage.getItem('location') || ""
+    )
+    // const hasPostedLoc=useRef(false)
+  
+    const getLocationFromClick=async()=>{
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+        const { latitude, longitude } = position.coords;
+  
+        try {
+          const response = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
+          );
+          const data = await response.json();
+          console.log("data", data);
+          const location =
+            data.address.city ||
+            data.address.town ||
+            data.address.village ||
+            "Unknown";
+            setlocation(location)
+            localStorage.setItem('location',location)
+          console.log("locationname", location);
+         
+          // if(!hasPostedLoc.current){
+            await fetch(`${API_URL}/location/add-location`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ location }),
+            });
+            localStorage.setItem('locationPosted', 'true');
+          // }
+          
+       
+        } catch (err) {
+          console.error("Failed to fetch location name:", err);
+        }
+      });
+      (error) => {
+        console.error("Geolocation error:", error);
+      }
+    }
+    useEffect(() => {
+      const isPosted=localStorage.getItem('locationPosted')
+      if(isPosted||locname)return;
+      getLocationFromClick()
+    }, []);
 
   const scrollPosition = () => {
     const totalScrollableHeight =
@@ -75,7 +129,7 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
               <h6>Experience</h6>
             </li>
             <li className="li-items" onClick={modalHandler}>
-              <h6>
+              <h6 onClick={()=>getLocationFromClick()}>
                 <AtSign />
               </h6>
             </li>
@@ -123,7 +177,7 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    clasNames="bi bi-envelope"
+                    className="bi bi-envelope"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
