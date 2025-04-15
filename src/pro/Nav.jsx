@@ -28,6 +28,10 @@ const Nav = ({ InfoRef, skillRef, projectRef, experienceRef }) => {
     // const hasPostedLoc=useRef(false)
   
     const getLocationFromClick=async()=>{
+      window.scrollTo({
+        top:20,
+        behavior:'smooth'
+      })
       navigator.geolocation.getCurrentPosition(
         async (position) => {
         const { latitude, longitude } = position.coords;
